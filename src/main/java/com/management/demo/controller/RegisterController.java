@@ -58,7 +58,7 @@ public class RegisterController {
                             "This email already exist");
         } else {
             if (!bindingResult.hasErrors()) {
-                userService.add(user, "ADMIN",file);
+                userService.add(user, "USER",file);
                 ConfirmationTokenEntity confirmationTokenEntity = new ConfirmationTokenEntity(user);
                 confirmationTokenRepo.save(confirmationTokenEntity);
 

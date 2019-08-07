@@ -847,3 +847,97 @@ Verify the connector's configuration, identify and stop any process that's liste
 2019-08-07 17:38:39.115 INFO  c.m.d.i.TimeCheckInterceptor - {"request_time":1565185118686,"request_counts":6,"request_duration":17,"response_time":1565185118703,"request_URL":"http://localhost:8080/home","completion_duration":428}
 2019-08-07 17:38:39.159 INFO  c.m.d.i.TimeCheckInterceptor - {"request_time":1565185119157,"request_counts":7,"request_duration":2,"response_time":1565185119159,"request_URL":"http://localhost:8080/static/css/home.css","completion_duration":2}
 2019-08-07 17:38:39.411 INFO  c.m.d.i.TimeCheckInterceptor - {"request_time":1565185119206,"request_counts":8,"request_duration":204,"response_time":1565185119410,"request_URL":"http://localhost:8080/error","completion_duration":205}
+2019-08-07 22:40:03.372 INFO  com.management.demo.JobApplication - Starting JobApplication on Arshak-PC with PID 5220 (C:\Users\Arshak\IdeaProjects\management\target\classes started by Arshak in C:\Users\Arshak\IdeaProjects\management)
+2019-08-07 22:40:03.487 INFO  com.management.demo.JobApplication - No active profile set, falling back to default profiles: default
+2019-08-07 22:40:11.323 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-07 22:40:11.926 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 511ms. Found 3 repository interfaces.
+2019-08-07 22:40:13.775 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$76a3cd3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-07 22:40:18.117 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2019-08-07 22:40:18.508 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2019-08-07 22:40:18.683 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-08-07 22:40:18.684 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-07 22:40:25.745 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-08-07 22:40:25.745 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 21319 ms
+2019-08-07 22:40:26.445 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 5.2.4 by Boxfuse
+2019-08-07 22:40:26.451 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-08-07 22:40:27.427 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-08-07 22:40:27.432 INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/users_jobs (MySQL 5.7)
+2019-08-07 22:40:30.499 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.325s)
+2019-08-07 22:40:30.554 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `users_jobs`: 2
+2019-08-07 22:40:30.557 INFO  o.f.core.internal.command.DbMigrate - Schema `users_jobs` is up to date. No migration necessary.
+2019-08-07 22:40:31.185 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-07 22:40:31.649 INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-07 22:40:31.669 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-08-07 22:40:32.819 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-07 22:40:33.898 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-08-07 22:40:39.179 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-07 22:40:42.138 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/resources/**'], []
+2019-08-07 22:40:42.138 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/static/**'], []
+2019-08-07 22:40:42.139 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/css/**'], []
+2019-08-07 22:40:42.139 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/js/**'], []
+2019-08-07 22:40:42.261 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6dfa20, org.springframework.security.web.context.SecurityContextPersistenceFilter@914835, org.springframework.security.web.header.HeaderWriterFilter@e24a1a, org.springframework.security.web.authentication.logout.LogoutFilter@20b369, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@109b603, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@17446d9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e3566e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@68e880, org.springframework.security.web.session.SessionManagementFilter@eadc5a, org.springframework.security.web.access.ExceptionTranslationFilter@1c7e828, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@11e3c34]
+2019-08-07 22:40:42.856 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-07 22:40:42.958 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-07 22:40:43.820 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2019-08-07 22:40:43.962 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+2019-08-07 22:40:43.973 INFO  com.management.demo.JobApplication - Started JobApplication in 51.446 seconds (JVM running for 64.925)
+2019-08-07 22:42:33.900 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-07 22:42:33.901 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-08-07 22:42:33.934 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 32 ms
+2019-08-07 22:42:39.997 INFO  c.m.d.i.TimeCheckInterceptor - {"request_time":1565203358810,"request_counts":2,"request_duration":556,"response_time":1565203359366,"request_URL":"http://localhost:8085/css/main.css","completion_duration":556}
+2019-08-07 22:42:39.998 INFO  c.m.d.i.TimeCheckInterceptor - {"request_time":1565203354071,"request_counts":1,"request_duration":47,"response_time":1565203354118,"request_URL":"http://localhost:8085/","completion_duration":3654}
+2019-08-07 22:42:42.263 INFO  c.m.d.i.TimeCheckInterceptor - {"request_time":1565203362257,"request_counts":3,"request_duration":1,"response_time":1565203362258,"request_URL":"http://localhost:8085/login","completion_duration":6}
+2019-08-07 22:42:52.212 INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2019-08-07 22:42:52.522 INFO  c.m.d.i.TimeCheckInterceptor - {"request_time":1565203372119,"request_counts":4,"request_duration":357,"response_time":1565203372476,"request_URL":"http://localhost:8085/admin/home","completion_duration":403}
+2019-08-07 22:42:52.822 INFO  c.m.d.i.TimeCheckInterceptor - {"request_time":1565203372602,"request_counts":5,"request_duration":220,"response_time":1565203372822,"request_URL":"http://localhost:8085/css/home.css","completion_duration":220}
+2019-08-07 22:42:59.554 INFO  c.m.d.i.TimeCheckInterceptor - {"request_time":1565203379549,"request_counts":6,"request_duration":1,"response_time":1565203379550,"request_URL":"http://localhost:8085/","completion_duration":5}
+2019-08-07 22:43:57.974 INFO  com.management.demo.JobApplication - Starting JobApplication on Arshak-PC with PID 1888 (C:\Users\Arshak\IdeaProjects\management\target\classes started by Arshak in C:\Users\Arshak\IdeaProjects\management)
+2019-08-07 22:43:57.977 INFO  com.management.demo.JobApplication - No active profile set, falling back to default profiles: default
+2019-08-07 22:44:00.959 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-07 22:44:01.259 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 256ms. Found 3 repository interfaces.
+2019-08-07 22:44:02.118 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9755a609] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-07 22:44:02.953 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2019-08-07 22:44:02.994 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2019-08-07 22:44:03.010 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-08-07 22:44:03.010 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-07 22:44:05.899 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-08-07 22:44:05.900 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 7846 ms
+2019-08-07 22:44:06.331 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 5.2.4 by Boxfuse
+2019-08-07 22:44:06.334 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-08-07 22:44:07.185 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-08-07 22:44:07.189 INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/users_jobs (MySQL 5.7)
+2019-08-07 22:44:07.620 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.214s)
+2019-08-07 22:44:07.638 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `users_jobs`: 2
+2019-08-07 22:44:07.639 INFO  o.f.core.internal.command.DbMigrate - Schema `users_jobs` is up to date. No migration necessary.
+2019-08-07 22:44:08.273 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-07 22:44:08.944 INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-07 22:44:08.946 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-08-07 22:44:09.383 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-07 22:44:09.617 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-08-07 22:44:11.217 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-07 22:44:12.369 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/resources/**'], []
+2019-08-07 22:44:12.369 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/static/**'], []
+2019-08-07 22:44:12.369 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/css/**'], []
+2019-08-07 22:44:12.369 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/js/**'], []
+2019-08-07 22:44:12.406 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@8f23ad, org.springframework.security.web.context.SecurityContextPersistenceFilter@3cd732, org.springframework.security.web.header.HeaderWriterFilter@156f93a, org.springframework.security.web.authentication.logout.LogoutFilter@1ce14e6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@173e8a5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@b8589a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4ee8a7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@33ca19, org.springframework.security.web.session.SessionManagementFilter@1bb74e1, org.springframework.security.web.access.ExceptionTranslationFilter@c76d6e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1dba9cd]
+2019-08-07 22:44:12.624 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-07 22:44:12.675 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-07 22:44:12.946 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2019-08-07 22:44:12.972 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+2019-08-07 22:44:12.976 INFO  com.management.demo.JobApplication - Started JobApplication in 16.069 seconds (JVM running for 20.632)
+2019-08-07 22:44:18.378 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-07 22:44:18.379 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-08-07 22:44:18.389 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2019-08-07 22:44:18.941 INFO  c.m.d.i.TimeCheckInterceptor - {"request_time":1565203458424,"request_counts":1,"request_duration":14,"response_time":1565203458438,"request_URL":"http://localhost:8085/","completion_duration":466}
+2019-08-07 22:44:19.393 INFO  c.m.d.i.TimeCheckInterceptor - {"request_time":1565203459388,"request_counts":3,"request_duration":0,"response_time":1565203459388,"request_URL":"http://localhost:8085/","completion_duration":4}
+2019-08-07 22:44:20.275 INFO  c.m.d.i.TimeCheckInterceptor - {"request_time":1565203459058,"request_counts":2,"request_duration":295,"response_time":1565203459353,"request_URL":"http://localhost:8085/register","completion_duration":1217}
+2019-08-07 22:44:22.403 INFO  c.m.d.i.TimeCheckInterceptor - {"request_time":1565203462378,"request_counts":4,"request_duration":1,"response_time":1565203462379,"request_URL":"http://localhost:8085/register","completion_duration":25}
+2019-08-07 22:45:01.375 INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2019-08-07 22:45:03.639 WARN  c.m.demo.repository.redis.UserRedis - Redis error : 
+2019-08-07 22:45:10.770 INFO  c.m.d.i.TimeCheckInterceptor - {"request_time":1565203500926,"request_counts":5,"request_duration":9836,"response_time":1565203510762,"request_URL":"http://localhost:8085/register","completion_duration":9844}
+2019-08-07 22:47:37.535 INFO  c.m.d.i.TimeCheckInterceptor - {"request_time":1565203657531,"request_counts":6,"request_duration":1,"response_time":1565203657532,"request_URL":"http://localhost:8085/login","completion_duration":4}
+2019-08-07 22:47:51.668 INFO  c.m.d.i.TimeCheckInterceptor - {"request_time":1565203671461,"request_counts":7,"request_duration":36,"response_time":1565203671497,"request_URL":"http://localhost:8085/user/home","completion_duration":207}

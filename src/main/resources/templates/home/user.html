@@ -1,10 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>User Home</title>
+    <link href="../../static/css/home.css" th:href="@{/css/home.css}" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
-<h1>Welcome User</h1>
+<div class="container">
+
+    <form th:action="@{/logout}" method="get">
+        <button class="logout" name="registration"
+                type="Submit">Logout
+        </button>
+    </form>
+    <div class="panel-group" style="margin-top:40px">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <span th:utext="${userName}"></span>
+            </div>
+            <p class="adminMessage" th:utext="${userMessage}"></p>
+        </div>
+    </div>
+</div>
 </body>
 </html>

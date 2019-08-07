@@ -9,6 +9,7 @@ import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 import javax.sql.DataSource;
@@ -19,6 +20,7 @@ public class WebMvcSecurityConfig extends WebSecurityConfigurerAdapter {
 
     private PasswordEncoder passwordEncoder;
     private DataSource dataSource;
+    private AuthenticationSuccessHandler successHandler;
 
     @Value("${spring.queries.users-query}")
     private String usersQuery;
@@ -26,9 +28,10 @@ public class WebMvcSecurityConfig extends WebSecurityConfigurerAdapter {
     private String rolesQuery;
 
     @Autowired
-    public WebMvcSecurityConfig(PasswordEncoder passwordEncoder, DataSource dataSource) {
+    public WebMvcSecurityConfig(PasswordEncoder passwordEncoder, DataSource dataSource, AuthenticationSuccessHandler successHandler) {
         this.passwordEncoder = passwordEncoder;
         this.dataSource = dataSource;
+        this.successHandler = successHandler;
     }
 
     @Override
@@ -39,11 +42,11 @@ public class WebMvcSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/login").permitAll()
                 .antMatchers("/register").permitAll()
                 .antMatchers("/confirm").permitAll()
-                .antMatchers("/home/admin").hasAuthority("ADMIN")
+                .antMatchers("/admin/**").hasAuthority("ADMIN")
                 .anyRequest()
                 .authenticated().and().csrf().disable().formLogin()
                 .loginPage("/login").failureUrl("/login?error=true")
-                .defaultSuccessUrl("/home")
+                .successHandler(successHandler)
                 .usernameParameter("email")
                 .passwordParameter("password")
                 .and().logout()

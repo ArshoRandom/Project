@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Log In</title>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/main.css}"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	</head>
+
+<body>
+<form th:action="@{/register}" method="get">
+	<button  type="Submit">Go To Registration Page</button>
+</form>
+
+<div class="container">
+
+	<form th:action="@{/login}" method="POST" class="form-signin">
+		<h1 th:text="Welcome"></h1>
+		<br/>
+
+		<input type="text" id="email" name="email" th:placeholder="Email"
+			   class="form-control"/> <br/>
+		<input type="password" th:placeholder="Password"
+			   id="password" name="password" class="form-control"/> <br/>
+
+		<div align="center" th:if="${param.error}">
+			<p style="font-size: 20px; color: #FF1C19;">Email or Password invalid, please verify</p>
+		</div>
+		<button  name="Submit" value="Login" type="Submit"
+				th:text="Login"></button>
+	</form>
+</div>
+</body>
+</html>

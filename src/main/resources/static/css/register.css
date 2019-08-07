@@ -1,0 +1,11 @@
+.form-horizontal{
+    margin: 500px;
+    align-content: center;
+    width: 400px;
+    height: 600px;
+    background-color: #64aeff;
+    border-radius: 10px;
+}
+input{
+    width: 300px;
+}

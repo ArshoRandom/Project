@@ -1,7 +1,7 @@
-package com.management.demo.repository;
+package com.management.demo.email;
 
 
-import com.management.demo.entity.ConfirmationTokenEntity;
+import com.management.demo.email.ConfirmationTokenEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

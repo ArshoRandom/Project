@@ -6,6 +6,9 @@ import com.management.demo.repository.RoleRepo;
 import com.management.demo.repository.UserRepo;
 import com.management.demo.repository.redis.UserRedis;
 import com.management.demo.service.UserService;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.config.annotation.authentication.configuration.EnableGlobalAuthentication;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
@@ -56,7 +59,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void deleteById(int id) {
+       public void deleteById(int id) {
         this.userRedis.deleteFromRedis(String.valueOf(id));
         this.userRepo.deleteById(id);
     }

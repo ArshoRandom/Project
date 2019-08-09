@@ -1,5 +1,6 @@
-package com.management.demo.entity;
+package com.management.demo.email;
 
+import com.management.demo.entity.UserEntity;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

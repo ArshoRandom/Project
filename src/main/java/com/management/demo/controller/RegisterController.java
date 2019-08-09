@@ -1,9 +1,9 @@
 package com.management.demo.controller;
 
-import com.management.demo.entity.ConfirmationTokenEntity;
+import com.management.demo.email.ConfirmationTokenEntity;
 import com.management.demo.entity.UserEntity;
-import com.management.demo.repository.ConfirmationTokenRepo;
-import com.management.demo.service.MailSenderService;
+import com.management.demo.email.ConfirmationTokenRepo;
+import com.management.demo.email.MailSenderService;
 import com.management.demo.service.UserService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.SimpleMailMessage;

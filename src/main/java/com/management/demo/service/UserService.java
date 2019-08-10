@@ -1,5 +1,6 @@
 package com.management.demo.service;
 
+import com.management.demo.entity.Role;
 import com.management.demo.entity.UserEntity;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -23,5 +24,6 @@ public interface UserService {
 
     Optional<UserEntity> getByEmailAndPassword(String email, String password);
 
+    List<UserEntity> findAllByUserRole(Role role);
 
 }

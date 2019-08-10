@@ -1,6 +1,6 @@
 package com.management.demo.service.impl;
 
-import com.management.demo.entity.RoleEntity;
+import com.management.demo.entity.Role;
 import com.management.demo.entity.UserEntity;
 import com.management.demo.repository.RoleRepo;
 import com.management.demo.repository.UserRepo;
@@ -42,7 +42,7 @@ public class UserServiceImpl implements UserService {
     public void add(UserEntity user, String role, MultipartFile file) throws IOException {
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         user.setActive(1);
-        RoleEntity userRole = roleRepo.findByRole(role);
+        Role userRole = roleRepo.findByRole(role);
         user.setRoles(new HashSet<>(Collections.singletonList(userRole)));
         String filePath = new File("src/main/resources/images").getAbsolutePath();
         byte[] bytes = file.getBytes();
@@ -62,6 +62,11 @@ public class UserServiceImpl implements UserService {
        public void deleteById(int id) {
         this.userRedis.deleteFromRedis(String.valueOf(id));
         this.userRepo.deleteById(id);
+    }
+
+    @Override
+    public List<UserEntity> findAllByUserRole(Role role) {
+      return this.userRepo.findAllByUserRole(role);
     }
 
     @Override

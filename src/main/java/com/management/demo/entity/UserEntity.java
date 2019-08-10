@@ -44,7 +44,7 @@ public class UserEntity {
     @JoinTable(name = "users_roles",
             joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "role_id"))
-    private Set<RoleEntity> roles;
+    private Set<Role> roles;
 
     @OneToMany(mappedBy="user")
     private Set<WorkStatementEntity> statementEntities;
